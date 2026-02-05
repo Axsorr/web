@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Recovery from "./pages/Recovery";
 import Questions from "./pages/Questions";
+import Chat from "./pages/Chat";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <Route path="/register" element={<Register />} />
       <Route path="/recovery" element={<Recovery />} />
       <Route path="/questions" element={<Questions />} />
+      <Route path="/chat" element={<Chat />} />
     </Routes>
   );
 }
