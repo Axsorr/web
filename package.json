@@ -1,0 +1,12 @@
+{
+  "name": "match-me-web",
+  "private": true,
+  "workspaces": ["back-end", "front-end"],
+  "scripts": {
+    "dev": "npm -w back-end run dev & npm -w front-end run dev",
+    "lint": "npm -w back-end run lint && npm -w front-end run lint",
+    "typecheck": "npm -w back-end run typecheck && npm -w front-end run typecheck",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down"
+  }
+}
